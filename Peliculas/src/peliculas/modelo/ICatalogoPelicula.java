@@ -9,5 +9,12 @@ package peliculas.modelo;
  * @author User
  */
 public interface ICatalogoPelicula {
+    //metodo para insertar peliculas
+    void insertarPelicula(Pelicula nombrePelicula);
+    //metodo listar peliculas
+    void listarPelicula();
+    //metodo buscar peliculas
+    void buscarPelicula(Pelicula nombrePelicula);
+    
     
 }
