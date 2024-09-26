@@ -1,20 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package peliculas;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author User
- */
 public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Definicion ArrayList
+        ArrayList<String> meses = new ArrayList<>();
+        
+        /*
+            JOptionPane.ERROR_MESSAGE.       ->0
+            JOptionPane.INFORMATION_MESSAGE. ->1
+            JOptionPane.WARNING_MESSAGE.     ->2
+            JOptionPane.QUESTION_MESSAGE.    ->3
+        */
+        String valor = JOptionPane.showInputDialog( null,
+                "Ingrese texto",
+                "Entrada",
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null, 
+                valor,
+                "Selecciona una opcion",
+                1
+                );
+       
     }
     
 }
