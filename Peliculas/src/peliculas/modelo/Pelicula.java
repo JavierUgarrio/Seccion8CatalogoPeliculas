@@ -2,6 +2,7 @@
 package peliculas.modelo;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 
 public class Pelicula implements Serializable{
@@ -31,6 +32,28 @@ public class Pelicula implements Serializable{
     @Override
     public String toString() {
         return "Pelicula{" + "nombre=" + nombre + '}';
+    }
+    
+    //hashCode equals
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Pelicula other = (Pelicula) obj;
+        return Objects.equals(this.nombre, other.nombre);
     }
       
     
