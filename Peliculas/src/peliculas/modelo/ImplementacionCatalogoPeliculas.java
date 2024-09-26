@@ -41,7 +41,7 @@ public class ImplementacionCatalogoPeliculas implements ICatalogoPelicula {
     }
 
     @Override
-    public void buscarPelicula(Pelicula nombrePelicula) {
+    public void buscarPelicula(String nombrePelicula) {
         String resultado = null;
         for(var pelicula :listaPeliculas){
             if(pelicula.equals(listaPeliculas)){

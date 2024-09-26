@@ -14,7 +14,7 @@ public interface ICatalogoPelicula {
     //metodo listar peliculas
     void listarPelicula();
     //metodo buscar peliculas
-    void buscarPelicula(Pelicula nombrePelicula);
+    void buscarPelicula(String nombrePelicula);
     
     
 }
