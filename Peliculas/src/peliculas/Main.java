@@ -1,6 +1,7 @@
 package peliculas;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import peliculas.ui.UiPeliculas;
 
 public class Main {
 
@@ -17,17 +18,9 @@ public class Main {
             JOptionPane.WARNING_MESSAGE.     ->2
             JOptionPane.QUESTION_MESSAGE.    ->3
         */
-        String valor = JOptionPane.showInputDialog( null,
-                "Ingrese texto",
-                "Entrada",
-                JOptionPane.QUESTION_MESSAGE);
         
-        JOptionPane.showMessageDialog(null, 
-                valor,
-                "Selecciona una opcion",
-                1
-                );
-       
+        UiPeliculas.interfazUsuario();
+      
     }
     
 }
