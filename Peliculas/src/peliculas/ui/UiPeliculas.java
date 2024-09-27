@@ -18,8 +18,15 @@ public class UiPeliculas {
                   "Ingrese una opcion",
                   3
           );
-          switch(opcion){
-              case "1": 
+          int intOpcion = 0;
+          try{
+              intOpcion = Integer.parseInt(opcion);
+          }catch(Exception e){
+              e.printStackTrace(System.out);
+          }
+          
+          switch(intOpcion){
+              case 1: 
                   String nombrePelicula = JOptionPane.showInputDialog(
                   null,
                   "Ingrese el nombre de la Pelicula",
@@ -29,10 +36,10 @@ public class UiPeliculas {
                   pelicula = new Pelicula(nombrePelicula);
                   peliculas.insertarPelicula(pelicula);
                   break;
-              case "2":
+              case 2:
                   peliculas.listarPelicula();
                   break;
-              case "3":
+              case 3:
                   nombrePelicula = JOptionPane.showInputDialog(
                           null,
                           "Ingrese el nombre de la pelicula",
@@ -40,7 +47,7 @@ public class UiPeliculas {
                           3);
                   peliculas.buscarPelicula(nombrePelicula);
                   break;
-              case "4":
+              case 4:
                   break CERRAR;
               default:
                   JOptionPane.showMessageDialog(null, 
